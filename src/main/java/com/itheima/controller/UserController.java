@@ -13,7 +13,7 @@ import java.util.List;
 
 @Controller
 public class UserController {
-    /*
+        /*
         方法传递普通类型参数，数量任意，类型必须匹配
         http://localhost/requestParam1?name=itheima
         http://localhost/requestParam1?name=itheima&age=14
@@ -22,6 +22,7 @@ public class UserController {
     public String requestParam1(String name, int age) {
         System.out.println(name + age);
         return "page.jsp";
+
     }
 
     //方法传递普通类型参数，使用@RequestParam参数匹配URL传参中的参数名称与方法形参名称
